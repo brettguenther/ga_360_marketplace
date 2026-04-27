@@ -5,8 +5,8 @@ project_name: "block-ga-360"
 
 # Used in google_analytics_block.model connection param
 constant: CONNECTION_NAME {
-  value: "looker-private-demo"
-  export: override_required
+  value: "default_bigquery_connection"
+  export: override_optional
 }
 
 # Used in ga_sessions.view sql_table_name
@@ -21,12 +21,12 @@ constant: GA360_TABLE_NAME {
 }
 
 constant: PDT_DATE_FILTER {
-  value: "last 5 years"
+  value: "last 8 years"
   export: override_optional
 }
 
 constant: EXPLORE_DATE_FILTER {
-  value: "last 5 years"
+  value: "last 8 years"
   export: override_optional
 }
 
